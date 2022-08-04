@@ -7,8 +7,27 @@
 </head>
 <body>
 	<h1 id="h1"></h1>
+  <div class="container">
+    <form action="#" method="post">
+      <label for="name ">Name </label>
+      <input type="text" name="name" id="name "><br><br>
+      <label for="email">Email </label>
+      <input type="email" name="email" id="email"><br><br>
+      <button value="Submit" onclick="myFunc()">Submit</button>
+    </form>
+  </div>
+  <div class="container">
+    <p id="name1"></p>zz
+    <p id="email1"></p>
+  </div>
   <script>
 	document.getElementById("h1").innerHTML = "Hello World";
+  function myFunc(){
+    var p = document.getElementById("name").value;
+    var q = document.getElementById("email").value;
+    alert(document.getElementById("name1").innerHTML);
+    alert(document.getElementById("email1").innerHTML);
+  }
 </script>
 </body>
 </html>
